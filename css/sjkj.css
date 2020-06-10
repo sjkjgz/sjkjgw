@@ -10,7 +10,7 @@ body{
     /* background: #fb8f03; */
 }
 .background-black {
-    background: whitesmoke  
+    background: #f5f5f5;  
 }
 .background-theme {
     background: #00BCD4  
@@ -204,6 +204,13 @@ ul li{list-style: none}
 .product-ERP,
 .product-MES{
 	margin-bottom: 3%;
+}
+.product-MES{
+    margin-bottom: 0;
+}
+.product-SCM,
+.product-MES{
+    background-color: #f5f5f5; 
 }
 
 .product-PDM-title,
