@@ -1,0 +1,23 @@
+.top{position:relative}
+.top h3{font-size:36px;font-weight:500;width:90%;color:#fff;left: 40%;;position:absolute;top:70px}
+.top .joinus{position:absolute;left:325px;top:80px;width:440px;height:198px}
+.tabList li h2,.top p{text-align:center;font-size:18px}
+.top p{margin: 10px 0 0 -30%;;color:#333;line-height:26px}
+.rightBOX{height:auto}
+.tabList{margin-top:30px;position:relative}
+.tabList ul{margin:0 30px;border-bottom:1px solid #ebebeb}
+.tabList li{float:left;padding:0 2px}
+.tabList li h2{display:inline-block;padding:0 26px;color:#848484;line-height:55px;cursor:pointer}
+.tabList li.active h2{color:#ff9129;border-bottom:2px solid #ff9129}
+.tabList li:hover h2{color:#ff9129}
+.content_wrap{margin:15px 0 80px}
+.tabList .content{width:1088px;background:#fff;display:none}
+.tabList .content.active{display:block}
+.content h3{font-size:16px;color:#3093de;line-height:78px;padding:0 30px}
+.content h3 i{margin-top:30px;width:18px;height:10px;}
+.content p{padding-bottom:20px;font-size:14px;color:#333;line-height:25px;padding-right:60px;padding-left:30px}
+.content .itemBox p:first-child{border-top:1px solid #f0f0f0}
+.content .itemBox:nth-child(odd){background:#fafafa}
+.content .itemBox{height:78px;cursor:pointer;overflow:hidden;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s}
+.content .itemBox h3:hover{background:#f0f0f0}
+.content .itemBox.active{height:auto}
