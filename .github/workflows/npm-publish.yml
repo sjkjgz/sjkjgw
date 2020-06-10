@@ -1,0 +1,22 @@
+name: oss
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Sjkjgw Pro（OSS）
+    steps:
+    - name: Checout(获取源码)
+      uses: actions/checkout@v1
+    - name: Setup ossutil(安装阿里云oss)
+      uses: manyuanrong/setup-ossutil@v1.0
+      with:
+        endpoint: "oss-cn-shenzhen.aliyuncs.com"
+        access-key-id: ${{ secrets.OSS_ACCESSKEY_ID }}
+        access-key-secret: ${{ secrets.OSS_ACCESSKEY_SECRET }}
+    - name: Upload aliyun oss(上传官网项目到oss)
+      env:
+        BUCKET: sjkjgz
+      run: |
+        ossutil rm oss://$BUCKET/static/ -rf
+        ossutil cp dist oss://$BUCKET/ -rf
+
